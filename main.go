@@ -2,7 +2,7 @@ package main
 
 import (
   "fmt"
-  "advent_of_code/getinput"
+  "advent_of_code/input"
 )
 
 func main() {
@@ -15,5 +15,5 @@ func main() {
   fmt.Println("Enter the task to run: ")
   fmt.Scanln(&day)
 
-  fmt.Println(getinput.GetInput(token, day))
+  fmt.Println(input.Get(token, day))
 }
