@@ -6,11 +6,14 @@ import (
 )
 
 func main() {
-  fmt.Println("Enter your session token: ")
-
   var token string
+  var day int
 
+  fmt.Println("Enter your session token: ")
   fmt.Scanln(&token)
 
-  fmt.Println(getinput.GetInput(token))
+  fmt.Println("Enter the task to run: ")
+  fmt.Scanln(&day)
+
+  fmt.Println(getinput.GetInput(token, day))
 }

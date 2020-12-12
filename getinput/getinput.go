@@ -25,9 +25,8 @@ func request(token string, day int) *http.Request {
   return request
 }
 
-func GetInput(token string) string {
+func GetInput(token string, day int) string {
   client := &http.Client{}
-  var day int = 3
 
   resp, err := client.Do(request(token, day))
 
