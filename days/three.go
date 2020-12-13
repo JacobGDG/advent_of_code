@@ -61,22 +61,12 @@ func TaskOne(input string) {
 func TaskTwo(input string) {
   grid := createGrid(input)
   answer := 1
-  var num int
 
-  num = traverseHill(grid, 1, 1)
-  answer *= num
-
-  num = traverseHill(grid, 3, 1)
-  answer *= num
-
-  num = traverseHill(grid, 5, 1)
-  answer *= num
-
-  num = traverseHill(grid, 7, 1)
-  answer *= num
-
-  num = traverseHill(grid, 1, 2)
-  answer *= num
+  answer *= traverseHill(grid, 1, 1)
+  answer *= traverseHill(grid, 3, 1)
+  answer *= traverseHill(grid, 5, 1)
+  answer *= traverseHill(grid, 7, 1)
+  answer *= traverseHill(grid, 1, 2)
 
   fmt.Println(answer)
 }
