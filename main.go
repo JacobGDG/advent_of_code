@@ -18,10 +18,10 @@ func main() {
   fmt.Println("Enter the day to run: ")
   fmt.Scanln(&day)
 
-  var inputData string = input.Get(token, day)
-
   fmt.Println("Enter the task to run (1 or 2): ")
   fmt.Scanln(&task)
+
+  var inputData string = input.Get(token, day)
 
   switch day {
   case 3:
@@ -34,7 +34,7 @@ func main() {
     if task == 1 {
       four.TaskOne(inputData)
     } else {
-      four.TaskOne(inputData)
+      four.TaskTwo(inputData)
     }
   }
 }
