@@ -3,7 +3,8 @@ package main
 import (
   "fmt"
   "advent_of_code/input"
-  "advent_of_code/days"
+  "advent_of_code/days/three"
+  "advent_of_code/days/four"
 )
 
 func main() {
@@ -17,7 +18,7 @@ func main() {
   fmt.Println("Enter the day to run: ")
   fmt.Scanln(&day)
 
-  var input_data string = input.Get(token, day)
+  var inputData string = input.Get(token, day)
 
   fmt.Println("Enter the task to run (1 or 2): ")
   fmt.Scanln(&task)
@@ -25,9 +26,15 @@ func main() {
   switch day {
   case 3:
     if task == 1 {
-      three.TaskOne(input_data)
+      three.TaskOne(inputData)
     } else {
-      three.TaskTwo(input_data)
+      three.TaskTwo(inputData)
+    }
+  case 4:
+    if task == 1 {
+      four.TaskOne(inputData)
+    } else {
+      four.TaskOne(inputData)
     }
   }
 }
